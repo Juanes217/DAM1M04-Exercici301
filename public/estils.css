@@ -1,0 +1,97 @@
+/* Configuració General */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #2d3436;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Header i Menú */
+header {
+    background-color: #2d3436;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: #dfe6e9;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #74b9ff;
+}
+
+/* Taula Estilitzada */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th {
+    background-color: #f1f2f6;
+    color: #636e72;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    padding: 15px;
+    border-bottom: 2px solid #dfe6e9;
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #f1f2f6;
+}
+
+tr:hover {
+    background-color: #fafafa;
+}
+
+/* Etiquetes (Badges) */
+.badge-mida {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gran {
+    background-color: #fab1a0;
+    color: #d63031;
+}
+
+.petita {
+    background-color: #55efc4;
+    color: #103b33;
+}
+
+.warning-box {
+    background-color: #ffeaa7;
+    border-left: 5px solid #fdcb6e;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+}

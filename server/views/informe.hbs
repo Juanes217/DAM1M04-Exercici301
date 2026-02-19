@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/estils.css">
+    <title>Informe de Ciutats</title>
+</head>
+<body>
+    {{!-- Passem site per al títol del header --}}
+    {{> header site=site}}
+
+    <main>
+        <h2>Llistat de ciutats detallat</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ciutat</th>
+                    <th>País</th>
+                    <th>Població</th>
+                    <th>Tipus</th>
+                    <th>Mida</th>
+                </tr>
+            </thead>
+                <tbody>
+                    {{#each cities}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{lookup ../countries country}}</td> {{!-- Utilitza ../countries --}}
+                        <td>{{population}}</td>
+                        <td>{{#if coastal}}🌊 Costanera{{else}}Interior{{/if}}</td>
+                        {{!-- Busca el tros on calcules la mida i deixa'l així --}}
+                        <td>
+                            {{#if (lte population 800000)}}
+                                <span class="badge-mida petita">Petita</span>
+                            {{else}}
+                                <span class="badge-mida gran">Gran</span>
+                            {{/if}}
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/estils.css">
+    <title>{{title}}</title>
+</head>
+<body>
+    {{> header}}
+    
+    <main>
+        <h2>{{subtitle}}</h2>
+        <p>{{notice}}</p>
+
+        {{#if showWarning}}
+            <div class="alerta">
+                <strong>ATENCIÓ:</strong> Aquesta pàgina està en mode de proves amb dades JSON.
+            </div>
+        {{/if}}
+    </main>
+</body>
+</html>
